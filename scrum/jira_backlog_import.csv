@@ -1,0 +1,105 @@
+Issue Id,Parent Id,Issue Type,Summary,Description,Story Points,Priority,Labels
+E1,,Epic,Core FAQ chatbot,A member can ask a question and get a correct answer from the WinCS FAQ.,,Medium,wincs-faq
+E2,,Epic,Quality and safety,"The assistant is tested, does not invent answers and handles harmful input safely.",,Medium,wincs-faq
+E3,,Epic,Usability,"The assistant is easy to use, measured with SUS before and after improvements.",,Medium,wincs-faq
+E4,,Epic,Agile metrics and documentation,"Velocity, burndown and cycle time are tracked in Power BI; docs live in Confluence.",,Medium,wincs-faq
+1,E1,Story,Set up repository and dev environment,"As the developer, I want a GitHub repo with a README and venv setup so that anyone can run the project.
+
+Acceptance criteria:
+Repo is public; README has setup steps; app runs locally from a fresh clone.",2,High,wincs-faq suggested-sprint-1
+2,E1,Story,Collect real WinCS FAQ content,"As a WinCS member, I want the assistant to use real society information so that answers are accurate.
+
+Acceptance criteria:
+Committee has reviewed and approved the knowledge_base files; every SAMPLE banner removed.",3,Highest,wincs-faq suggested-sprint-1
+3,E1,Story,Load FAQ into searchable sections,"As the developer, I want the FAQ split into sections so that the bot can find the right one.
+
+Acceptance criteria:
+Each '## ' heading becomes one section; unit test passes.",2,High,wincs-faq suggested-sprint-1
+4,E1,Story,Retrieve relevant FAQ sections for a question,"As a member, I want my question matched to the right FAQ section so that I get a relevant answer.
+
+Acceptance criteria:
+Top-4 retrieval contains the right section for 4 sample questions (unit tests).",3,High,wincs-faq suggested-sprint-1
+5,E1,Story,Generate grounded answers with Claude,"As a member, I want a short answer in plain language so that I do not have to read the whole FAQ.
+
+Acceptance criteria:
+Answers use only the retrieved context; model and effort configurable by env var.",5,Highest,wincs-faq suggested-sprint-1
+6,E1,Story,Chat interface,"As a member, I want a simple chat window so that I can ask questions without technical skills.
+
+Acceptance criteria:
+Streamlit chat shows history, a spinner while loading, and a Clear chat button.",3,High,wincs-faq suggested-sprint-1
+7,E1,Story,Show sources under each answer,"As a member, I want to see which FAQ section an answer came from so that I can trust it.
+
+Acceptance criteria:
+Each answered message has a Sources expander listing section names.",2,Medium,wincs-faq suggested-sprint-1
+8,E2,Story,Say 'I don't know' instead of guessing,"As a member, I want the bot to admit when it doesn't know so that I am not misled.
+
+Acceptance criteria:
+Out-of-scope questions return the no-info message and the committee contact; TC13-TC18 pass.",3,Highest,wincs-faq suggested-sprint-2
+9,E2,Story,Block prompt-injection attempts,"As the committee, we want the bot to ignore attempts to override its rules so that it stays on-topic.
+
+Acceptance criteria:
+TC27 and TC28 are blocked before reaching the model.",2,High,wincs-faq suggested-sprint-2
+10,E2,Story,Supportive reply for self-harm messages,"As a member in distress, I want a caring reply with real help options so that I can get support.
+
+Acceptance criteria:
+Self-harm phrases return the helpline message; TC30 passes; helpline is configurable.",2,Highest,wincs-faq suggested-sprint-2
+11,E2,Story,Refuse requests for personal data,"As the committee, we want personal data requests refused so that members' privacy is protected.
+
+Acceptance criteria:
+TC29 is blocked.",1,High,wincs-faq suggested-sprint-2
+12,E2,Story,Handle API errors gracefully,"As a member, I want a friendly message if the service is down so that I know to try again.
+
+Acceptance criteria:
+API failures show a friendly message; unit test passes.",1,Medium,wincs-faq suggested-sprint-2
+13,E2,Story,Write the AI test plan (30 cases),"As the team, we want a written test plan so that we test correct, hallucination, edge and harmful cases.
+
+Acceptance criteria:
+Test plan page in Confluence; 30 cases in evals/test_cases.csv.",3,High,wincs-faq suggested-sprint-2
+14,E2,Story,Automate the test plan,"As the developer, I want a script that runs all 30 cases so that I can re-test after every change.
+
+Acceptance criteria:
+run_evals.py writes a results CSV with pass/fail per case.",3,High,wincs-faq suggested-sprint-2
+15,E2,Story,Run test plan and log bugs,"As the team, we want every failed case logged as a Jira bug so that we fix it next sprint.
+
+Acceptance criteria:
+Run 1 results saved; one Jira Bug per real failure, linked to its test case ID.",2,High,wincs-faq suggested-sprint-2
+16,E3,Story,Usability test round 1 (5 users + SUS),"As the team, we want a baseline SUS score so that we can measure improvement.
+
+Acceptance criteria:
+5 users complete the tasks and the SUS form; score calculated with sus_score.py.",3,High,wincs-faq suggested-sprint-2
+17,E3,Story,Example question buttons,"As a new user, I want example questions so that I know what I can ask.
+
+Acceptance criteria:
+Sidebar shows 3 example questions that send when clicked.",1,Medium,wincs-faq suggested-sprint-3
+18,E3,Story,Thumbs up/down feedback,"As the committee, we want feedback on each answer so that we can find weak answers.
+
+Acceptance criteria:
+Feedback saved to logs/feedback.csv with question, answer and rating.",2,Medium,wincs-faq suggested-sprint-3
+19,E3,Story,Fix top usability issues from round 1,"As a user, I want the problems found in testing fixed so that the tool is easier to use.
+
+Acceptance criteria:
+Top 3 issues from round 1 fixed and listed in the sprint review.",5,High,wincs-faq suggested-sprint-3
+20,E3,Story,Usability test round 2 (5 users + SUS),"As the team, we want to re-measure SUS so that we can show the improvement.
+
+Acceptance criteria:
+Round 2 SUS calculated and compared with round 1.",3,High,wincs-faq suggested-sprint-3
+21,E4,Story,Agile metrics Power BI dashboard,"As the Scrum Master, I want velocity, burndown and cycle time charts so that the team can see its progress.
+
+Acceptance criteria:
+Dashboard built from the Jira export with the 3 charts.",5,Medium,wincs-faq suggested-sprint-3
+22,E4,Story,Confluence project documentation,"As a stakeholder, I want documentation in one place so that I understand the project.
+
+Acceptance criteria:
+Overview, requirements, architecture, DoD, test plan, sprint reports and decisions pages published.",3,Medium,wincs-faq suggested-sprint-1
+23,E4,Story,One-page user guide,"As a new member, I want a short guide so that I know how to use the assistant.
+
+Acceptance criteria:
+One page; reviewed by one WinCS member.",2,Medium,wincs-faq suggested-sprint-3
+24,E4,Story,3-minute demo video,"As a recruiter, I want a short demo so that I can see the tool working.
+
+Acceptance criteria:
+Video under 3:15, uploaded and linked in the README.",3,Medium,wincs-faq suggested-sprint-3
+25,E1,Story,Deploy to Streamlit Community Cloud,"As a member, I want a link I can open on my phone so that I don't need to install anything.
+
+Acceptance criteria:
+Public URL works on mobile; API key stored as a secret, not in the repo.",3,Medium,wincs-faq suggested-sprint-3

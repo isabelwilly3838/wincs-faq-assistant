@@ -1,0 +1,4 @@
+sprint,sprint_order,start,end,committed_points,completed_points,items_done,bugs_done
+WFA Sprint 1,1,2026-01-12,2026-01-25,19.0,19.0,8,0
+WFA Sprint 2,2,2026-01-26,2026-02-08,19.0,19.0,8,2
+WFA Sprint 3,3,2026-02-09,2026-02-22,17.0,17.0,8,2
