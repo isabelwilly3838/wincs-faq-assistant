@@ -2,7 +2,7 @@
 
 An AI chat assistant that answers questions about WinCS **only from the society's FAQ**, shows its sources, says "I don't know" instead of guessing, and handles harmful input safely. It was built with Claude Code and run as a 3-sprint Scrum project.
 
-> ⚠️ `knowledge_base/*.md` currently holds **sample** content. Replace it with real, committee-approved WinCS information before any user testing (that's backlog story 2).
+> ℹ️ **Unofficial solo student project**, not affiliated with or endorsed by Women in CS @ TUM. The knowledge base is built only from their public pages (see `knowledge_base/SOURCES.txt`). Re-check those pages each sprint.
 
 ## Run it
 Requires Python 3.10+.
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 export ANTHROPIC_API_KEY=sk-ant-...      # or: ant auth login
 streamlit run app.py
 ```
-Terminal-only: `python -m assistant.core "How much does membership cost?"`
+Terminal-only: `python -m assistant.core "How can I join WinCS?"`
 
 ## Test it
 ```bash
@@ -46,12 +46,12 @@ The code is built. What's left needs **you and real people**, because that's wha
 - [ ] Create free **Jira** (Scrum template), **Confluence** and **Miro** accounts, then follow the Jira checklist at the bottom of `scrum/ceremonies.md`.
 - [ ] Import `scrum/jira_backlog_import.csv` into Jira.
 - [ ] Paste `docs/confluence/*.md` into Confluence pages (the editor converts Markdown when you paste it).
-- [ ] Ask 2–3 WinCS members to join. Agree a 1-hour slot every second week, plus async stand-ups.
+- [ ] Solo project: you are Product Owner, Scrum Master and Developer. Book your ceremonies in your calendar (planning, review and retro on the first and last day of each sprint).
 - [ ] Get an API key at console.anthropic.com and set a monthly spending limit.
 
 ### Sprint 1 (weeks 1–2): working MVP with real content
 - [ ] Sprint planning on Miro. Pick a sprint goal, then pull stories.
-- [ ] Collect the real FAQ from the committee and replace `knowledge_base/` (story 2).
+- [ ] Knowledge base is built from the public WinCS @ TUM website. Re-check it for changes and update `knowledge_base/` (story 2).
 - [ ] Move each story through the Jira board **as you actually work on it**, because the metrics come from those dates.
 - [ ] Use Claude Code for changes, which is the "AI-assisted coding" part. Keep notes on what you asked it to do; they make good interview material.
 - [ ] Sprint review + Start/Stop/Continue retro. Write the sprint report in Confluence.
@@ -59,7 +59,7 @@ The code is built. What's left needs **you and real people**, because that's wha
 ### Sprint 2 (weeks 3–4): test, harden, baseline usability
 - [ ] Update the test cases to match your real FAQ facts (`must_include` columns).
 - [ ] `python evals/run_evals.py`. Read every answer, mark `manual_verdict`, and log each real failure as a Jira **Bug**.
-- [ ] Usability round 1: 5 users, the tasks and SUS form from `usability/usability_test_kit.md`, then `python usability/sus_score.py`.
+- [ ] Usability round 1: 5 users (classmates or friends, 15 min each), the tasks and SUS form from `usability/usability_test_kit.md`, then `python usability/sus_score.py`.
 - [ ] Review + 4Ls retro.
 
 ### Sprint 3 (weeks 5–6): fix, improve, measure again, ship

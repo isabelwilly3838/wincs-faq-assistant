@@ -1,7 +1,9 @@
 # Scrum ceremonies kit (Miro + Jira)
 
-Team: you (Product Owner + Scrum Master + Developer) and 2–3 WinCS members (stakeholders / testers / co-developers).
-Be honest about the roles on your CV: "acted as Scrum Master and Product Owner for a 3–4 person team".
+Team: **solo**. You are Product Owner, Scrum Master and Developer. Usability testers (5 classmates or friends) act as users in Sprints 2 and 3.
+Be honest on your CV: "ran a solo project using Scrum". Don't claim you led a team.
+
+**Solo adaptation:** keep every ceremony but time-box it shorter. Planning takes 30 min. Review means demoing to yourself, or recording it (good material for the demo video). Retro is a 20-min written reflection on the Miro frame. Stand-up is a 2-line daily note in Jira or Confluence (done / next / blockers). Planning Poker becomes estimating against a reference story (for example, "the 3-point story").
 
 Sprint length: 2 weeks. Three sprints. Suggested goals:
 
@@ -43,7 +45,7 @@ Planning Poker in Miro: each person writes their estimate on a hidden sticky, ev
 
 ## Daily stand-up (async, 5 min)
 
-With a volunteer team, use a WhatsApp or Discord thread instead of a meeting. Each person posts three things every day (or every two days):
+Solo: write a 2-line note every working day (a Confluence "Daily log" page, or a comment on the sprint). Three things:
 **Done since last time · Doing next · Blockers**. Update the Jira board straight afterwards, because the metrics depend on it.
 
 ## Sprint review (30–45 min, last day of the sprint)
@@ -52,7 +54,7 @@ With a volunteer team, use a WhatsApp or Discord thread instead of a meeting. Ea
 |---|---|
 | 5 min | Sprint goal: met or not? Points committed vs completed |
 | 20 min | Live demo of each completed story against its acceptance criteria |
-| 10 min | Stakeholder feedback → new stickies → new Jira stories or bugs |
+| 10 min | Feedback (yours, plus any user testers') → new stickies → new Jira stories or bugs |
 | 5 min | Show updated metrics (velocity and burndown from Power BI) |
 
 Only stories that meet the Definition of Done count as completed. Unfinished work goes back to the backlog and does not count as partly done.

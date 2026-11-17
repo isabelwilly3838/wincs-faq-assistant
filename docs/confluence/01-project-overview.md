@@ -3,10 +3,10 @@
 **Status:** Sprint _ of 3 · **Owner:** _your name_ · **Repo:** _GitHub link_ · **Jira:** _board link_
 
 ## Problem
-New and prospective WinCS members ask the same questions again and again (cost, meeting times, mentoring, how to volunteer). Committee members answer them by hand on Instagram, email and Discord.
+New and prospective students interested in Women in CS @ TUM have to search the website, Instagram and WhatsApp to find out how to join, what events exist and how to reach the team. Answers are spread across several channels.
 
 ## Solution
-A chat assistant that answers questions **only** from the official WinCS FAQ, shows its sources, and says "I don't know" (with the committee contact) when the FAQ doesn't cover a question.
+A chat assistant that answers questions **only** from public Women in CS @ TUM information, shows its sources, and says "I don't know" (with the official contact email) when the FAQ doesn't cover a question.
 
 ## Goals and success measures
 | Goal | Measure | Target |
@@ -21,11 +21,12 @@ A chat assistant that answers questions **only** from the official WinCS FAQ, sh
 | Person | Role |
 |---|---|
 | _you_ | Product Owner, Scrum Master, Developer |
-| _member 1_ | Stakeholder / tester |
-| _member 2_ | Stakeholder / tester |
+| 5 usability testers (classmates/friends) | Users in SUS rounds 1 and 2 |
 
 ## Out of scope
 Accounts and logins, event booking, storing personal data, and answering non-WinCS questions.
 
 ## Timeline
 Sprint 1: _dates_ · Sprint 2: _dates_ · Sprint 3: _dates_
+
+> Unofficial solo student project, not affiliated with or endorsed by Women in CS @ TUM.

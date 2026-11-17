@@ -1,15 +1,13 @@
-# About WinCS
+# About Women in CS @ TUM
 
-> SAMPLE CONTENT - replace every fact below with real WinCS information before user testing.
+## What is Women in CS @ TUM
+Women in CS @ TUM (WinCS) is a student association at the Technical University of Munich (TUM), in the School of Computation, Information and Technology (CIT). It builds a supportive, inclusive community for women in computer science and related fields, where students can connect, share knowledge, build skills and grow together.
 
-## What is WinCS
-WinCS (Women in Computer Science) is a student society that supports women and non-binary students in computing. We run talks, coding workshops, mentoring and social events.
+## Mission
+Our tagline is "Empowering women in computer science." We are committed to equal rights and opportunities for all genders in computer science, with a focus on empowering and supporting women in the field.
 
-## Who can join
-Anyone can join, of any gender, course or year. You do not need to study computer science. Allies are welcome.
+## What we do
+Throughout the semester we run community and social activities, hands-on workshops, talks and speaker events, and industry career events. We work with industry partners so students can get insight into the tech industry, network, and explore career paths.
 
-## Membership cost
-Membership is free for the academic year. You join through the Students' Union website by searching for "WinCS".
-
-## Contact
-Email the committee at wincs-committee@example.org or message us on Instagram @wincs_example. We reply within 3 working days.
+## Organisation and location
+Women in CS @ TUM is a registered association (Women in CS @ TUM e.V.) based in Munich, Germany. Its listed home base is Garching bei München, where TUM's computer science department is. The association was founded in 2015.

@@ -1,9 +1,9 @@
 # Requirements and personas
 
 ## Personas
-**Priya, first-year CS student.** She is curious about WinCS but shy about messaging the committee. She wants quick answers on her phone.
+**Priya, first-year CS student.** She is curious about WinCS at TUM but shy about messaging the team. She wants quick answers on her phone.
 **Sam, second-year non-CS student.** Sam isn't sure they're "allowed" to join. Sam needs reassurance and clear facts.
-**Committee member.** Wants fewer repeated questions, and confidence that the bot never gives wrong information.
+**Prospective company partner.** Wants to quickly find how to sponsor an event or post roles to the Talent Pool.
 
 ## User stories
 All stories and acceptance criteria live in Jira (epic → story). Embed the Jira backlog here with the Jira macro: `/jira` → filter `labels = wincs-faq`.

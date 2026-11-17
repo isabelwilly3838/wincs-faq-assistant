@@ -9,7 +9,7 @@ from assistant import core
 class FakeClient:
     """Stands in for anthropic.Anthropic(); records the request and returns a canned reply."""
 
-    def __init__(self, text="Membership is free.", stop_reason="end_turn", raise_exc=None):
+    def __init__(self, text="Join our WhatsApp community.", stop_reason="end_turn", raise_exc=None):
         self.text, self.stop_reason, self.raise_exc, self.last = text, stop_reason, raise_exc, None
         self.beta = SimpleNamespace(messages=SimpleNamespace(create=self._create))
 
@@ -26,17 +26,18 @@ def chunks():
 
 
 def test_kb_loads_sections(chunks):
-    assert len(chunks) >= 10
+    assert len(chunks) >= 12
     assert all(c.heading and c.text for c in chunks)
 
 
 @pytest.mark.parametrize(
     "q,expected_heading",
     [
-        ("How much does membership cost?", "Membership cost"),
-        ("When are the weekly meetings?", "Weekly meetings"),
-        ("How do I apply for the mentoring programme?", "How to apply for mentoring"),
-        ("when are committee elections", "Elections"),
+        ("How do I join the WhatsApp community?", "WhatsApp community"),
+        ("When do active member applications reopen?", "Becoming an active member"),
+        ("What is the Talent Pool?", "Talent Pool"),
+        ("what is the email address to contact you", "Contact"),
+        ("How can my company sponsor an event?", "Partnering and sponsoring"),
     ],
 )
 def test_retrieval_finds_right_section(chunks, q, expected_heading):
@@ -75,12 +76,12 @@ def test_blocked_input_never_calls_model(chunks):
 
 
 def test_answer_includes_sources_and_context(chunks):
-    fake = FakeClient("Membership is free for the academic year.")
-    a = core.ask("How much does membership cost?", chunks=chunks, client=fake)
+    fake = FakeClient("Applications reopen in April 2027.")
+    a = core.ask("When do active member applications reopen?", chunks=chunks, client=fake)
     assert a.status == "answered"
-    assert any("Membership cost" in s for s in a.sources)
+    assert any("Becoming an active member" in s for s in a.sources)
     prompt = fake.last["messages"][-1]["content"]
-    assert "<context>" in prompt and "Membership is free" in prompt
+    assert "<context>" in prompt and "April 2027" in prompt
     assert fake.last["model"] == core.MODEL
 
 

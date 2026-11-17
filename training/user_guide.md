@@ -1,6 +1,6 @@
 # WinCS FAQ Assistant: quick guide
 
-**What it is:** a chat helper that answers questions about WinCS (membership, events, mentoring, volunteering) using the society's official FAQ.
+**What it is:** a chat helper that answers questions about Women in CS @ TUM (joining, events, the Talent Pool, contacts and partnering) using the association's public website. Unofficial student project.
 **Open it:** _link_ (works on phone and laptop; no login).
 
 ## How to use it
@@ -10,13 +10,13 @@
 4. Tap **Clear chat** to start again.
 
 ## Good to know
-- **It only knows what's in the FAQ.** If it says *"I don't have that information"*, the FAQ doesn't cover it, so contact the committee (details in the answer).
-- **It won't guess.** It doesn't invent dates, prices or names. If an answer looks wrong, tap 👎 and tell a committee member.
+- **It only knows what's in the FAQ.** If it says *"I don't have that information"*, the FAQ doesn't cover it, so email womenincstum@gmail.com.
+- **It won't guess.** It doesn't invent dates, prices or names. If an answer looks wrong, tap 👎.
 - **Don't share personal information** in the chat.
 - **It's not a support service.** If you're struggling, please talk to a person: the WinCS Welfare contact, your university's wellbeing service, or emergency services.
 
 ## Tips for better answers
 - Ask one thing at a time.
-- Use key words: *membership*, *hackathon*, *mentor*, *volunteer*, *elections*.
+- Use key words: *join*, *WhatsApp*, *events*, *Talent Pool*, *contact*, *sponsor*.
 
-_Questions or feedback about the tool: wincs-committee@example.org_
+_Questions or feedback about the tool: open an issue on the GitHub repo._

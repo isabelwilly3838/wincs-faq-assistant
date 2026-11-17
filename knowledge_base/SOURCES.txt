@@ -1,0 +1,6 @@
+Knowledge base sources (public pages, read 2026-11-17). Unofficial project, not affiliated with Women in CS @ TUM.
+- https://womenincstum.github.io/ (home, Join us, Support us)
+- https://womenincstum.github.io/events
+- https://womenincstum.github.io/details (Our Team; roles only, no personal names stored)
+- https://it-cs.io/unternehmen/women-in-cs-at-tum/ (ITCS profile: description, founded 2015, Garching bei München, CIT department)
+Re-check these pages each sprint and update the .md files if anything changes.

@@ -11,7 +11,8 @@ LOG = Path(__file__).parent / "logs" / "feedback.csv"
 
 st.set_page_config(page_title="WinCS FAQ Assistant", page_icon="💬")
 st.title("WinCS FAQ Assistant")
-st.caption("Ask about membership, events, mentoring or volunteering. Answers come only from the WinCS FAQ.")
+st.caption("Ask about joining, events, the Talent Pool or contacts. Answers come only from public Women in CS @ TUM information. "
+           "Unofficial student project, not affiliated with Women in CS @ TUM.")
 
 
 @st.cache_resource
@@ -34,7 +35,7 @@ if "messages" not in st.session_state:
 
 with st.sidebar:
     st.subheader("Try asking")
-    for example in ["How much does membership cost?", "When are weekly meetings?", "How do I get a mentor?"]:
+    for example in ["How can I join WinCS?", "Where can I find upcoming events?", "What is the Talent Pool?"]:
         if st.button(example, use_container_width=True):
             st.session_state.pending = example
     if st.button("Clear chat", type="secondary"):
